@@ -6,8 +6,8 @@ import java.util.ArrayList;
 public class Pared {
     public Color color;
     public MaterialPared material;
-    public ArrayList<Ventana> ventana;
-    public ArrayList<Puerta> puerta;
+    public ArrayList<Ventana> ventana = new ArrayList<>();
+    public ArrayList<Puerta> puerta = new ArrayList<>();
     public Pared(){}
     public Pared(Color color, MaterialPared material, Ventana ventana, Puerta puerta){
         this.color = color;

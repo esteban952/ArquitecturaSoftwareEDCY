@@ -14,9 +14,10 @@ public class CasaEconomica extends CasaBuilder {
     @Override
     public void colocarPuertas() {
         casa.puerta = new Puerta();
-        casa.puerta.materialPuerta = MaterialPuerta.aglomerado;
+        casa.puerta.material = MaterialPuerta.aglomerado;
         casa.puerta.alto = 2;
         casa.puerta.ancho = 0.9;
+        casa.paredes[0].puerta.add(casa.puerta);
     }
 
     @Override
@@ -25,6 +26,7 @@ public class CasaEconomica extends CasaBuilder {
         casa.ventana.marco = TipoMarco.fierro;
         casa.ventana.alto = 1;
         casa.ventana.ancho = 1;
+        casa.paredes[0].ventana.add(casa.ventana);
     }
 
     @Override
@@ -41,7 +43,7 @@ public class CasaEconomica extends CasaBuilder {
 
     @Override
     public void construirGaraje() {
-        casa.garaje = new Garaje();
+        casa.garaje = null;
     }
     
 }

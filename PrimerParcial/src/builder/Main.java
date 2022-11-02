@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("** Construir una Casa **");
         boolean s = true;
         Scanner in = new Scanner(System.in);
         int op;
         while (s) {
+            System.out.println("** Construir una Casa **");
             System.out.println("1.- Casa Económica");
             System.out.println("2.- Casa Media");
             System.out.println("3.- Casa Lujo");

@@ -3,7 +3,7 @@ package builder;
 
 class Puerta {
     public double alto, ancho;
-    public MaterialPuerta materialPuerta;
+    public MaterialPuerta material;
     public Color color;
     public Puerta(){
     
@@ -11,7 +11,7 @@ class Puerta {
     public Puerta(double alto, double ancho, MaterialPuerta materialPuerta, Color color){
         this.alto = alto;
         this.ancho = ancho;
-        this.materialPuerta = materialPuerta;
+        this.material = materialPuerta;
         this.color = color;
     }
 }

@@ -16,9 +16,10 @@ public class CasaMedia extends CasaBuilder{
     @Override
     public void colocarPuertas() {
         casa.puerta = new Puerta();
-        casa.puerta.materialPuerta = MaterialPuerta.madera;
+        casa.puerta.material = MaterialPuerta.madera;
         casa.puerta.alto = 2;
         casa.puerta.ancho = 0.9;
+        casa.paredes[0].puerta.add(casa.puerta);
     }
 
     @Override
@@ -27,6 +28,8 @@ public class CasaMedia extends CasaBuilder{
         casa.ventana.marco = TipoMarco.aluminio;
         casa.ventana.alto = 1.5;
         casa.ventana.ancho = 1.5;
+        casa.paredes[0].ventana.add(casa.ventana);
+        casa.paredes[0].ventana.add(casa.ventana);
     }
 
     @Override
